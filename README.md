@@ -1,4 +1,6 @@
-### SALES TAX TEST
+### SALES-TAXES TEST
+
+This is a small ruby command line program to calculate the taxes for a receipt which is in a csv file.
 
 How to run this test
 ```

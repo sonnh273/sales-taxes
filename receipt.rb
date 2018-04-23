@@ -11,7 +11,7 @@ class Receipt
     arr_of_orders.each do |order|
       product_order = ProductOrder.new(order);
 
-      product_order_with_tax = product_order.get_product_order_with_tax()
+      product_order_with_tax = product_order.get_product_order_with_tax
       @arr_of_orders_with_tax.push(product_order_with_tax)
       @total += product_order.total
       @sales_taxes += product_order.sales_tax

@@ -1,6 +1,7 @@
 #!/usr/bin/env ruby
 
 require_relative "receipt"
+require_relative "float"
 
 require 'csv'
 
@@ -16,7 +17,7 @@ else
     puts order_with_tax.join(', ')
   end
 
-  puts "Sales Taxes: " + '%.2f' % receipt.sales_taxes.round(2)
-  puts "Total: " + '%.2f' % receipt.total.round(2)
+  puts "Sales Taxes: " + '%.2f' % receipt.sales_taxes.money_patch
+  puts "Total: " + '%.2f' % receipt.total
 
 end

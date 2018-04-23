@@ -9,7 +9,7 @@ ruby index.rb csv_file_path
 
 For example:
 ```
-ruby index.rb test1.csv
+ruby index.rb test_data/test1.csv
 ```
 
 It will print the output to the console:

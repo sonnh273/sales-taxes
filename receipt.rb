@@ -1,4 +1,5 @@
 require_relative "product_order"
+require_relative "float"
 
 class Receipt
   attr_accessor :sales_taxes, :total, :arr_of_orders_with_tax
@@ -17,5 +18,4 @@ class Receipt
       @sales_taxes += product_order.sales_tax
     end
   end
-
 end

@@ -2,7 +2,7 @@
 
 This is a small ruby command line program to calculate the taxes for a receipt which is in a csv file.
 
-How to run this test
+#### How to run this program
 ```
 ruby index.rb csv_file_path
 ```
@@ -19,4 +19,10 @@ It will print the output to the console:
 1, chocolate bar, 0.85
 Sales Taxes: 1.50
 Total: 29.83
+```
+
+#### How to test this program
+This project comes with RSpec Unit testing. Run it by this command:
+```
+rspec spec spec/receipt_spec.rb
 ```

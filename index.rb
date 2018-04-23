@@ -1,11 +1,10 @@
 #!/usr/bin/env ruby
 
 require_relative "receipt"
-require_relative "float"
 
 require 'csv'
 
-input, output = ARGV
+input = ARGV
 
 if input.nil?
   puts "You need to provide the path of input CSV file"
